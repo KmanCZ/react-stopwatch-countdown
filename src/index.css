@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply rounded-full shadow-xl hover:shadow-lg py-2 px-4 mx-2;
+  }
+  .tab {
+    @apply rounded-t-lg p-2 cursor-pointer;
+  }
+  input[type="number"] {
+    @apply w-10 bg-transparent border-black border-b-[1px] outline-none appearance-none text-center;
+  }
+}
+
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
